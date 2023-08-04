@@ -1,0 +1,37 @@
+<!doctype html>
+   <html>
+   <head>
+       <title>
+        Parent child
+       </title>
+  </head>
+   <body>
+  </body>
+       <script>
+	   let year=prompt("Enter the year")
+class Parent{
+	constructor(no){
+		this.number=no;
+	}
+	leapYear(){
+		if(this.number%4==0){
+			console.log("It is leep year")
+		}
+		else{
+			console.log("Not a leap year")
+		}
+	}
+}
+ 
+ class Child extends Parent{
+	constructor(number){
+		super()
+		this.number=number;
+	}
+	
+}
+let child=new Child(year);
+child.leapYear();
+</script>
+</html>
+
